@@ -15,10 +15,10 @@ namespace Server.Mobiles
             SetDex(36, 55);
             SetInt(16, 30);
 
-            SetHits(15, 27);
+            SetHits(Core.T2A ? 13 : 15, Core.T2A ? 30 : 27);
             SetMana(0);
 
-            SetDamage(3, 5);
+            SetDamage(Core.T2A ? 2 : 3, Core.T2A ? 6 : 5);
 
             SetDamageType(ResistanceType.Physical, 100);
 
@@ -35,13 +35,13 @@ namespace Server.Mobiles
 
             Tamable = true;
             ControlSlots = 1;
-            MinTameSkill = 35.1;
+            MinTameSkill = Core.T2A ? 50.0 : 35.1;
         }
 
         public override string CorpseName => "a llama corpse";
         public override string DefaultName => "a llama";
 
-        public override int Meat => 1;
+        public override int Meat => Core.T2A ? 7 : 1;
         public override int Hides => 12;
         public override FoodType FavoriteFood => FoodType.FruitsAndVeggies | FoodType.GrainsAndHay;
     }

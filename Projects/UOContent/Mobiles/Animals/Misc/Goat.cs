@@ -35,13 +35,13 @@ namespace Server.Mobiles
 
             Tamable = true;
             ControlSlots = 1;
-            MinTameSkill = 11.1;
+            MinTameSkill = Core.T2A ? 30.0 : 11.1;
         }
 
         public override string CorpseName => "a goat corpse";
         public override string DefaultName => "a goat";
 
-        public override int Meat => 2;
+        public override int Meat => Core.T2A ? 14 : 2;
         public override int Hides => 8;
         public override FoodType FavoriteFood => FoodType.GrainsAndHay | FoodType.FruitsAndVeggies | FoodType.Leather;
     }

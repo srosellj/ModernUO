@@ -33,17 +33,17 @@ namespace Server.Mobiles
             Fame = 350;
             Karma = 0;
 
-            VirtualArmor = 6;
+            VirtualArmor = Core.T2A ? 16 : 6;
 
             Tamable = true;
             ControlSlots = 1;
-            MinTameSkill = 23.1;
+            MinTameSkill = Core.T2A ? 40.0 : 23.1;
         }
 
         public override string CorpseName => "a bull frog corpse";
         public override string DefaultName => "a bull frog";
 
-        public override int Meat => 1;
+        public override int Meat => Core.T2A ? 2 : 1;
         public override int Hides => 4;
         public override FoodType FavoriteFood => FoodType.Fish | FoodType.Meat;
 

@@ -43,7 +43,7 @@ namespace Server.Mobiles
         public override string CorpseName => "a dolphin corpse";
         public override string DefaultName => "a dolphin";
 
-        public override int Meat => 1;
+        public override int Meat => Core.T2A ? 4 : 1;
 
         public override void OnDoubleClick(Mobile from)
         {

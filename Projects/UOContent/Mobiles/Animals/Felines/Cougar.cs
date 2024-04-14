@@ -18,7 +18,7 @@ namespace Server.Mobiles
             SetHits(34, 48);
             SetMana(0);
 
-            SetDamage(4, 10);
+            SetDamage(Core.T2A ? 2 : 4, Core.T2A ? 12 : 10);
 
             SetDamageType(ResistanceType.Physical, 100);
 
@@ -38,13 +38,13 @@ namespace Server.Mobiles
 
             Tamable = true;
             ControlSlots = 1;
-            MinTameSkill = 41.1;
+            MinTameSkill = Core.T2A ? 55.0 : 41.1;
         }
 
         public override string CorpseName => "a cougar corpse";
         public override string DefaultName => "a cougar";
 
-        public override int Meat => 1;
+        public override int Meat => Core.T2A ? 15 : 1;
         public override int Hides => 10;
         public override FoodType FavoriteFood => FoodType.Fish | FoodType.Meat;
         public override PackInstinct PackInstinct => PackInstinct.Feline;

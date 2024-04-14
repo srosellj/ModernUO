@@ -18,7 +18,7 @@ namespace Server.Mobiles
             SetHits(27, 41);
             SetMana(0);
 
-            SetDamage(5, 9);
+            SetDamage(Core.T2A ? 4 : 5, Core.T2A ? 10 : 9);
 
             SetDamageType(ResistanceType.Physical, 100);
 
@@ -36,13 +36,13 @@ namespace Server.Mobiles
 
             Tamable = true;
             ControlSlots = 1;
-            MinTameSkill = 59.1;
+            MinTameSkill = Core.T2A ? 70.0 : 59.1;
         }
 
         public override string CorpseName => "a deer corpse";
         public override string DefaultName => "a great hart";
 
-        public override int Meat => 6;
+        public override int Meat => Core.T2A ? 30 : 6;
         public override int Hides => 15;
         public override FoodType FavoriteFood => FoodType.FruitsAndVeggies | FoodType.GrainsAndHay;
 

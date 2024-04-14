@@ -18,11 +18,11 @@ namespace Server.Mobiles
             SetDex(36, 55);
             SetInt(6, 10);
 
-            SetHits(61, 80);
+            SetHits(Core.T2A ? 27 : 61, Core.T2A ? 72 : 80);
             SetStam(81, 100);
             SetMana(0);
 
-            SetDamage(5, 11);
+            SetDamage(Core.T2A ? 4 : 5, Core.T2A ? 12 : 11);
 
             SetDamageType(ResistanceType.Physical, 100);
 
@@ -39,11 +39,11 @@ namespace Server.Mobiles
             Fame = 0;
             Karma = 200;
 
-            VirtualArmor = 16;
+            VirtualArmor = Core.T2A ? 18 : 16;
 
             Tamable = true;
             ControlSlots = 1;
-            MinTameSkill = 11.1;
+            MinTameSkill = Core.T2A ? 45.0 : 11.1;
 
             var pack = Backpack;
 
@@ -58,7 +58,7 @@ namespace Server.Mobiles
         public override string CorpseName => "a horse corpse";
         public override string DefaultName => "a pack horse";
 
-        public override int Meat => 3;
+        public override int Meat => Core.T2A ? 15 : 3;
         public override int Hides => 10;
         public override FoodType FavoriteFood => FoodType.FruitsAndVeggies | FoodType.GrainsAndHay;
 

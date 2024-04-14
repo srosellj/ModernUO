@@ -18,7 +18,7 @@ namespace Server.Mobiles
             SetHits(38, 51);
             SetMana(0);
 
-            SetDamage(4, 10);
+            SetDamage(Core.T2A ? 2 : 4, Core.T2A ? 12 : 10);
 
             SetDamageType(ResistanceType.Physical, 100);
 
@@ -26,9 +26,9 @@ namespace Server.Mobiles
             SetResistance(ResistanceType.Fire, 5, 10);
             SetResistance(ResistanceType.Cold, 10, 15);
 
-            SetSkill(SkillName.MagicResist, 45.1, 60.0);
-            SetSkill(SkillName.Tactics, 43.3, 58.0);
-            SetSkill(SkillName.Wrestling, 43.3, 58.0);
+            SetSkill(SkillName.MagicResist, Core.T2A ? 43.0 : 45.1, Core.T2A ? 58.0 : 60.0);
+            SetSkill(SkillName.Tactics, Core.T2A ? 43.0 : 43.3, 58.0);
+            SetSkill(SkillName.Wrestling, Core.T2A ? 43.0 : 43.3, 58.0);
 
             Fame = 450;
             Karma = 0;
@@ -37,13 +37,13 @@ namespace Server.Mobiles
 
             Tamable = true;
             ControlSlots = 1;
-            MinTameSkill = -18.9;
+            MinTameSkill = Core.T2A ? 5.0 : -18.9;
         }
 
         public override string CorpseName => "a gorilla corpse";
         public override string DefaultName => "a gorilla";
 
-        public override int Meat => 1;
+        public override int Meat => Core.T2A ? 6 : 1;
         public override int Hides => 6;
         public override FoodType FavoriteFood => FoodType.FruitsAndVeggies | FoodType.GrainsAndHay;
     }

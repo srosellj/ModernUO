@@ -36,13 +36,13 @@ namespace Server.Mobiles
 
             Tamable = true;
             ControlSlots = 1;
-            MinTameSkill = -15.3;
+            MinTameSkill = Core.T2A ? 3 : -15.3;
         }
 
         public override string CorpseName => "a dog corpse";
         public override string DefaultName => "a dog";
 
-        public override int Meat => 1;
+        public override int Meat => Core.T2A ? 3 : 1;
         public override FoodType FavoriteFood => FoodType.Meat;
         public override PackInstinct PackInstinct => PackInstinct.Canine;
     }

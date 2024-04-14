@@ -19,7 +19,7 @@ namespace Server.Mobiles
             SetStam(46, 65);
             SetMana(0);
 
-            SetDamage(5, 15);
+            SetDamage(Core.T2A ? 2 : 5, Core.T2A ? 18 : 15);
 
             SetDamageType(ResistanceType.Physical, 100);
 
@@ -38,13 +38,13 @@ namespace Server.Mobiles
 
             Tamable = true;
             ControlSlots = 1;
-            MinTameSkill = 47.1;
+            MinTameSkill = Core.T2A ? 60.0 : 47.1;
         }
 
         public override string CorpseName => "an alligator corpse";
         public override string DefaultName => "an alligator";
 
-        public override int Meat => 1;
+        public override int Meat => Core.T2A ? 6 : 1;
         public override int Hides => 12;
         public override HideType HideType => HideType.Spined;
         public override FoodType FavoriteFood => FoodType.Meat | FoodType.Fish;

@@ -35,17 +35,17 @@ namespace Server.Mobiles
             Fame = 300;
             Karma = 0;
 
-            VirtualArmor = 10;
+            VirtualArmor = Core.T2A ? 16 : 10;
 
             Tamable = true;
             ControlSlots = 1;
-            MinTameSkill = -0.9;
+            MinTameSkill = Core.T2A ? 20.0 : -0.9;
         }
 
         public override string CorpseName => "a mountain goat corpse";
         public override string DefaultName => "a mountain goat";
 
-        public override int Meat => 2;
+        public override int Meat => Core.T2A ? 16 : 2;
         public override int Hides => 12;
         public override FoodType FavoriteFood => FoodType.GrainsAndHay | FoodType.FruitsAndVeggies;
     }

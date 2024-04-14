@@ -30,8 +30,8 @@ namespace Server.Mobiles
             SetResistance(ResistanceType.Physical, 25, 30);
             SetResistance(ResistanceType.Cold, 10, 15);
 
-            SetSkill(SkillName.MagicResist, 17.6, 25.0);
-            SetSkill(SkillName.Tactics, 67.6, 85.0);
+            SetSkill(SkillName.MagicResist, Core.T2A ? 18.0 : 17.6, 25.0);
+            SetSkill(SkillName.Tactics, Core.T2A ? 68.0 : 67.6, 85.0);
             SetSkill(SkillName.Wrestling, 40.1, 57.5);
 
             Fame = 600;
@@ -41,13 +41,13 @@ namespace Server.Mobiles
 
             Tamable = true;
             ControlSlots = 1;
-            MinTameSkill = 71.1;
+            MinTameSkill = Core.T2A ? 80.0 : 71.1;
         }
 
         public override string CorpseName => "a bull corpse";
         public override string DefaultName => "a bull";
 
-        public override int Meat => 10;
+        public override int Meat => Core.T2A ? 50 : 10;
         public override int Hides => 15;
         public override FoodType FavoriteFood => FoodType.GrainsAndHay;
         public override PackInstinct PackInstinct => PackInstinct.Bull;

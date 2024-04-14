@@ -19,7 +19,7 @@ namespace Server.Mobiles
             SetHits(76, 93);
             SetMana(0);
 
-            SetDamage(8, 13);
+            SetDamage(Core.T2A ? 6 : 8, Core.T2A ? 15 : 13);
 
             SetDamageType(ResistanceType.Physical, 100);
 
@@ -39,13 +39,13 @@ namespace Server.Mobiles
 
             Tamable = true;
             ControlSlots = 1;
-            MinTameSkill = 59.1;
+            MinTameSkill = Core.T2A ? 70.0 : 59.1;
         }
 
         public override string CorpseName => "a grizzly bear corpse";
         public override string DefaultName => "a grizzly bear";
 
-        public override int Meat => 2;
+        public override int Meat => Core.T2A ? 10 : 2;
         public override int Hides => 16;
         public override FoodType FavoriteFood => FoodType.Fish | FoodType.FruitsAndVeggies | FoodType.Meat;
         public override PackInstinct PackInstinct => PackInstinct.Bear;

@@ -30,15 +30,13 @@ namespace Server.Mobiles
 
             SetDamage(1, 4);
 
-            SetDamage(1, 4);
-
             SetDamageType(ResistanceType.Physical, 100);
 
             SetResistance(ResistanceType.Physical, 5, 15);
 
-            SetSkill(SkillName.MagicResist, 5.5);
-            SetSkill(SkillName.Tactics, 5.5);
-            SetSkill(SkillName.Wrestling, 5.5);
+            SetSkill(SkillName.MagicResist, Core.T2A ? 6.0 : 5.5);
+            SetSkill(SkillName.Tactics, Core.T2A ? 6.0 : 5.5);
+            SetSkill(SkillName.Wrestling, Core.T2A ? 6.0 : 5.5);
 
             Fame = 300;
             Karma = 0;
@@ -47,7 +45,7 @@ namespace Server.Mobiles
 
             Tamable = true;
             ControlSlots = 1;
-            MinTameSkill = 11.1;
+            MinTameSkill = Core.T2A ? 30.0 : 11.1;
 
             if (Core.AOS && Utility.Random(1000) == 0) // 0.1% chance to have mad cows
             {
@@ -58,7 +56,7 @@ namespace Server.Mobiles
         public override string CorpseName => "a cow corpse";
         public override string DefaultName => "a cow";
 
-        public override int Meat => 8;
+        public override int Meat => Core.T2A ? 40 : 8;
         public override int Hides => 12;
         public override FoodType FavoriteFood => FoodType.FruitsAndVeggies | FoodType.GrainsAndHay;
 

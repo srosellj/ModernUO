@@ -30,11 +30,11 @@ namespace Server.Mobiles
             ItemID = m_IDs[random * 2 + 1];
             BaseSoundID = 0xA8;
 
-            SetStr(22, 98);
+            SetStr(Core.T2A ? 44 : 22, Core.T2A ? 120 : 98);
             SetDex(56, 75);
             SetInt(6, 10);
 
-            SetHits(28, 45);
+            SetHits(Core.T2A ? 27 : 28, Core.T2A ? 72 : 45);
             SetMana(0);
 
             SetDamage(3, 4);
@@ -50,14 +50,16 @@ namespace Server.Mobiles
             Fame = 300;
             Karma = 300;
 
+            VirtualArmor = Core.T2A ? 18 : 0;
+
             Tamable = true;
             ControlSlots = 1;
-            MinTameSkill = 29.1;
+            MinTameSkill = Core.T2A ? 45.0 : 29.1;
         }
 
         public override string CorpseName => "a horse corpse";
 
-        public override int Meat => 3;
+        public override int Meat => Core.T2A ? 15 : 3;
         public override int Hides => 10;
         public override FoodType FavoriteFood => FoodType.FruitsAndVeggies | FoodType.GrainsAndHay;
     }

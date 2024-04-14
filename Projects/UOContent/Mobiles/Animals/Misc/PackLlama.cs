@@ -18,7 +18,7 @@ namespace Server.Mobiles
             SetDex(36, 55);
             SetInt(16, 30);
 
-            SetHits(50);
+            SetHits(Core.T2A ? 32 : 50, Core.T2A ? 48 : 50);
             SetStam(86, 105);
             SetMana(0);
 
@@ -43,7 +43,7 @@ namespace Server.Mobiles
 
             Tamable = true;
             ControlSlots = 1;
-            MinTameSkill = 11.1;
+            MinTameSkill = Core.T2A ? 50.0 : 11.1;
 
             var pack = Backpack;
 
@@ -58,7 +58,7 @@ namespace Server.Mobiles
         public override string CorpseName => "a llama corpse";
         public override string DefaultName => "a pack llama";
 
-        public override int Meat => 1;
+        public override int Meat => Core.T2A ? 7 : 1;
         public override FoodType FavoriteFood => FoodType.FruitsAndVeggies | FoodType.GrainsAndHay;
 
         public override bool OnBeforeDeath()
