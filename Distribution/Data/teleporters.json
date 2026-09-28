@@ -1450,19 +1450,19 @@
     "back": false
   },
   {
-    "src": { "map": "Felucca", "loc": [5919, 168, 22] },
-    "dst": { "map": "Felucca", "loc": [6083, 144, -20] },
+    "src": { "map": "Felucca", "loc": [5905, 97, 0] },
+    "dst": { "map": "Felucca", "loc": [5977, 169, 0] },
     "back": false
   },
   {
-    "src": { "map": "Felucca", "loc": [5919, 169, 22] },
-    "dst": { "map": "Felucca", "loc": [6083, 145, -20] },
+    "src": { "map": "Felucca", "loc": [5906, 96, 0] },
+    "dst": { "map": "Felucca", "loc": [5977, 169, 0] },
     "back": false
   },
   {
-    "src": { "map": "Felucca", "loc": [5919, 170, 22] },
-    "dst": { "map": "Felucca", "loc": [6083, 146, -20] },
-    "back": false
+    "src": { "map": "Felucca", "loc": [5906, 4069, 26] },
+    "dst": { "map": "Felucca", "loc": [2494, 3576, 5] },
+    "back": true
   },
   {
     "src": { "map": "Felucca", "loc": [5918, 1410, -29] },
@@ -1480,17 +1480,17 @@
     "back": false
   },
   {
-    "src": { "map": "Felucca", "loc": [5920, 168, 16] },
+    "src": { "map": "Felucca", "loc": [5919, 168, 22] },
     "dst": { "map": "Felucca", "loc": [6083, 144, -20] },
     "back": false
   },
   {
-    "src": { "map": "Felucca", "loc": [5920, 169, 16] },
+    "src": { "map": "Felucca", "loc": [5919, 169, 22] },
     "dst": { "map": "Felucca", "loc": [6083, 145, -20] },
     "back": false
   },
   {
-    "src": { "map": "Felucca", "loc": [5920, 170, 16] },
+    "src": { "map": "Felucca", "loc": [5919, 170, 22] },
     "dst": { "map": "Felucca", "loc": [6083, 146, -20] },
     "back": false
   },
@@ -1715,19 +1715,19 @@
     "back": false
   },
   {
-    "src": { "map": "Felucca", "loc": [6083, 144, -20] },
-    "dst": { "map": "Felucca", "loc": [5918, 168, 22] },
+    "src": { "map": "Felucca", "loc": [6039, 204, 22] },
+    "dst": { "map": "Felucca", "loc": [6050, 227, 44] },
     "back": false
   },
   {
-    "src": { "map": "Felucca", "loc": [6083, 145, -20] },
-    "dst": { "map": "Felucca", "loc": [5918, 169, 22] },
-    "back": false
+    "src": { "map": "Felucca", "loc": [6040, 192, 12] },
+    "dst": { "map": "Felucca", "loc": [6059, 88, 24] },
+    "back": true
   },
   {
-    "src": { "map": "Felucca", "loc": [6083, 146, -20] },
-    "dst": { "map": "Felucca", "loc": [5918, 170, 22] },
-    "back": false
+    "src": { "map": "Felucca", "loc": [6040, 193, 12] },
+    "dst": { "map": "Felucca", "loc": [6059, 89, 24] },
+    "back": true
   },
   {
     "src": { "map": "Felucca", "loc": [6040, 194, 12] },
@@ -1756,17 +1756,17 @@
   },
   {
     "src": { "map": "Felucca", "loc": [6083, 144, -20] },
-    "dst": { "map": "Felucca", "loc": [5920, 168, 22] },
+    "dst": { "map": "Felucca", "loc": [5918, 168, 22] },
     "back": false
   },
   {
     "src": { "map": "Felucca", "loc": [6083, 145, -20] },
-    "dst": { "map": "Felucca", "loc": [5920, 169, 22] },
+    "dst": { "map": "Felucca", "loc": [5918, 169, 22] },
     "back": false
   },
   {
     "src": { "map": "Felucca", "loc": [6083, 146, -20] },
-    "dst": { "map": "Felucca", "loc": [5920, 170, 22] },
+    "dst": { "map": "Felucca", "loc": [5918, 170, 22] },
     "back": false
   },
   {
@@ -3555,18 +3555,18 @@
     "back": false
   },
   {
-    "src": { "map": "Trammel", "loc": [5919, 168, 22] },
-    "dst": { "map": "Trammel", "loc": [6083, 144, -20] },
+    "src": { "map": "Trammel", "loc": [5882, 243, 0] },
+    "dst": { "map": "Trammel", "loc": [1998, 81, 5] },
     "back": false
   },
   {
-    "src": { "map": "Trammel", "loc": [5919, 169, 22] },
-    "dst": { "map": "Trammel", "loc": [6083, 145, -20] },
+    "src": { "map": "Trammel", "loc": [5899, 1411, 43] },
+    "dst": { "map": "Trammel", "loc": [1630, 3320, 0] },
     "back": false
   },
   {
-    "src": { "map": "Trammel", "loc": [5919, 170, 22] },
-    "dst": { "map": "Trammel", "loc": [6083, 146, -20] },
+    "src": { "map": "Trammel", "loc": [5900, 1411, 42] },
+    "dst": { "map": "Trammel", "loc": [1630, 3320, 0] },
     "back": false
   },
   {
@@ -3595,17 +3595,17 @@
     "back": false
   },
   {
-    "src": { "map": "Trammel", "loc": [5920, 168, 16] },
+    "src": { "map": "Trammel", "loc": [5919, 168, 22] },
     "dst": { "map": "Trammel", "loc": [6083, 144, -20] },
     "back": false
   },
   {
-    "src": { "map": "Trammel", "loc": [5920, 169, 16] },
+    "src": { "map": "Trammel", "loc": [5919, 169, 22] },
     "dst": { "map": "Trammel", "loc": [6083, 145, -20] },
     "back": false
   },
   {
-    "src": { "map": "Trammel", "loc": [5920, 170, 16] },
+    "src": { "map": "Trammel", "loc": [5919, 170, 22] },
     "dst": { "map": "Trammel", "loc": [6083, 146, -20] },
     "back": false
   },
@@ -3805,18 +3805,18 @@
     "back": false
   },
   {
-    "src": { "map": "Trammel", "loc": [6083, 144, -20] },
-    "dst": { "map": "Trammel", "loc": [5918, 168, 22] },
+    "src": { "map": "Trammel", "loc": [6031, 1499, 42] },
+    "dst": { "map": "Trammel", "loc": [1491, 1640, 24] },
     "back": false
   },
   {
-    "src": { "map": "Trammel", "loc": [6083, 145, -20] },
-    "dst": { "map": "Trammel", "loc": [5918, 169, 22] },
+    "src": { "map": "Trammel", "loc": [6031, 1501, 42] },
+    "dst": { "map": "Trammel", "loc": [1491, 1642, 24] },
     "back": false
   },
   {
-    "src": { "map": "Trammel", "loc": [6083, 146, -20] },
-    "dst": { "map": "Trammel", "loc": [5918, 170, 22] },
+    "src": { "map": "Trammel", "loc": [6039, 204, 22] },
+    "dst": { "map": "Trammel", "loc": [6050, 227, 44] },
     "back": false
   },
   {
@@ -3846,17 +3846,17 @@
   },
   {
     "src": { "map": "Trammel", "loc": [6083, 144, -20] },
-    "dst": { "map": "Trammel", "loc": [5920, 168, 22] },
+    "dst": { "map": "Trammel", "loc": [5918, 168, 22] },
     "back": false
   },
   {
     "src": { "map": "Trammel", "loc": [6083, 145, -20] },
-    "dst": { "map": "Trammel", "loc": [5920, 169, 22] },
+    "dst": { "map": "Trammel", "loc": [5918, 169, 22] },
     "back": false
   },
   {
     "src": { "map": "Trammel", "loc": [6083, 146, -20] },
-    "dst": { "map": "Trammel", "loc": [5920, 170, 22] },
+    "dst": { "map": "Trammel", "loc": [5918, 170, 22] },
     "back": false
   },
   {
